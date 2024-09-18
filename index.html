@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon  -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Contact form</title>
+    <!-- linking style sheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card-container">
+      <header>Contact Us</header>
+      <form class="form">
+        <div class="colum">
+          <!-- first name -->
+          <div class="input-box">
+            <label for="First Name">First Name</label>
+            <input
+              class="input"
+              type="text"
+              placeholder="First Name"
+              required
+              maxlength="45"
+            />
+            <p class="red-text">This field is required</p>
+          </div>
+
+          <!-- last name -->
+          <div class="input-box">
+            <label for="Last Name">Last Name</label>
+            <input
+              class="input"
+              type="text"
+              placeholder="Last Name"
+              required
+              maxlength="45"
+            />
+            <p class="red-text">This field is required</p>
+          </div>
+        </div>
+
+        <!-- Email box -->
+        <div class="input-box">
+          <label for="Message">Email Address</label>
+          <input
+            class="input"
+            type="text"
+            placeholder="Enter Email"
+            required
+            maxlength="45"
+          />
+          <p class="red-text">Pls enter a valid email address</p>
+        </div>
+
+        <div class="colum">
+          <!-- Query type -->
+          <div class="input-box">
+            <label for="Query Type">Query Type</label>
+            <div class="input green">
+              <input
+                class="radio-input"
+                type="radio"
+                required
+                maxlength="45"
+              />
+              General Enquiry
+            </div>
+            <p class="red-text">Pls select a query type</p>
+          </div>
+
+          <div class="input-box"> 
+            <label for="Last Name">&nbsp;</label>
+            <div class="input green">
+              <input
+                class="radio-input"
+                type="radio"
+                required
+                maxlength="45"
+              />
+              Support Request            
+            </div>
+          </div>
+        </div>
+
+        <!-- message box -->
+        <div class="input-box">
+          <label for="Message">Message</label>
+          <input
+            class="input text"
+            placeholder="message goes here!"
+            maxlength="1000"
+          ></input>
+          <p class="red-text">This field is required</p>
+        </div>
+
+        <!-- check box before button -->
+        <div class="checkboxx">
+          <input type="checkbox" class="checkbox" />
+          <label for="checkbox-text"
+            >I consent to being contacted by the team</label
+          >
+          <p class="red-text">
+            To submit this form,Please consent to be contacted
+          </p>
+        </div>
+
+        <!-- button  -->
+        <button class="button" type="submit">
+          <span>Submit</span>
+        </button>
+      </form>
+    </div>
+
+    <!-- overlay -->
+    <div class="overlay hidden"></div>
+
+    <!-- message notification -->
+    <div class="container">
+      <h1>
+        <img
+          src="assets/images/icon-success-check.svg"
+          alt="checkmark-circle-success"
+        />
+        Message Sent!
+      </h1>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+
+    <!-- text at the bottom -->
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>
+      Coded by
+      <a href="https://www.frontendmentor.io/profile/Wisdomjn"
+        >Wisdom Matthew</a
+      >
+    </div>
+
+    <!-- javaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
