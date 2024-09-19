@@ -37,12 +37,11 @@ btn.addEventListener("click", function () {
   // console.log(typeof inputValue, inputValue, boxChecked);
 
   // WHEN THE USER CLICKS THE BUTTON WITHOUT INPUTTING ANYTHINGS
-  if (inputValue === !value && !boxChecked) {
+  if (inputValue === !inputValue || boxChecked) {
     borderRed();
-  } else if (inputValue === value && boxChecked) {
-    // DISPLAY THE OVERLAY AND THE MESSAGE WHEN THE USER FILLS THE FORM
-    openModal();
   }
+  // DISPLAY THE OVERLAY AND THE MESSAGE WHEN THE USER FILLS THE FORM
+  openModal();
 });
 
 // CLOSING THE MODAL WITH THE ESCAPE KEY

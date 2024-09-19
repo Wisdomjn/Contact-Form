@@ -1,5 +1,5 @@
 /* importing font */
-@import url("https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"); */
 
 :root {
   /* colors */
@@ -25,7 +25,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "karla", sans-serif;
 }
 
 body {
@@ -38,7 +37,7 @@ body {
   align-items: center;
   justify-content: center;
   scroll-behavior: smooth;
-  /* overflow: hidden; */
+  font-family: "Ubuntu" sans-serif;
 }
 
 .card-container {
@@ -47,13 +46,12 @@ body {
   width: 100%;
   background-color: var(--White);
   padding: 2.4rem;
-  /* margin: auto; */
   border-radius: 1rem;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   & header {
     font-size: var(--font-1);
     color: var(--Grey-900);
-    font-weight: 900;
+    font-weight: 1000;
   }
   .form {
     .input-box {
@@ -92,6 +90,7 @@ body {
     }
   }
 }
+
 .text {
   height: 100px;
   width: 100%;
@@ -242,10 +241,17 @@ button {
 }
 
 /* mobile design */
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 428px) {
+  .card-container {
+    height: 100%;
+    margin: 1rem;
+  }
   .colum {
     display: flex;
     flex-flow: row wrap;
+  }
+  .attribution {
+    color: black;
   }
 }
 
